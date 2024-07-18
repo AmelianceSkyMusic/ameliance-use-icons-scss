@@ -1,0 +1,23 @@
+{
+  "name": "ameliance-use-icons-scss",
+  "version": "1.0.1",
+  "description": "scss mixin for import icons",
+  "main": "index.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmelianceSkyMusic/ameliance-use-icons-scss.git"
+  },
+  "keywords": [
+    "scss",
+    "icon",
+    "icons",
+    "import",
+    "ameliance"
+  ],
+  "author": "Ameliance SkyMusic <amelianceskymusic@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmelianceSkyMusic/ameliance-use-icons-scss/issues"
+  },
+  "homepage": "https://github.com/AmelianceSkyMusic/ameliance-use-icons-scss#readme"
+}

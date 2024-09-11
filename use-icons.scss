@@ -1,37 +1,37 @@
 // /**
 // * icons: $iconsSet — icons set like: $iconsSet: (arrow-left, arrow-right)
-// * $path: '/assets/icons/' — path to svg icons in the "public" folder
-// * $prefix: 'icon-24--' — prefix for use in classes
-// * $type: 'svg' | 'png' — file extension
-// * $filename-prefix: 'feather-' — feather-icon-like.svg
-// * $filename-postfix: '-48px' — icon-like-48px.png
+// * $path: "/assets/icons/" — path to svg icons in the "public" folder
+// * $prefix: "icon-24--" — prefix for use in classes
+// * $type: "svg" | "png" — file extension
+// * $filename-prefix: "feather-" — feather-icon-like.svg
+// * $filename-postfix: "-48px" — icon-like-48px.png
 // */
 @mixin useIcons(
 	$icons,
-	$path: '/assets/icons/',
-	$prefix: 'icon--',
-	$type: 'svg',
-	$filename-prefix: '',
-	$filename-postfix: '',
+	$path: "/assets/icons/",
+	$prefix: "icon--",
+	$type: "svg",
+	$filename-prefix: "",
+	$filename-postfix: ""
 ) {
-	%#{$prefix + 'icon'} {
-		background-color: currentColor;
-		mask-size: contain;
-		mask-position: center;
-		mask-repeat: no-repeat;
-		-webkit-mask-size: contain;
+	%#{$prefix + "icon"} {
 		-webkit-mask-position: center;
 		-webkit-mask-repeat: no-repeat;
+		-webkit-mask-size: contain;
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		background-color: currentColor;
 	}
-	%#{$prefix + 'content'} {
+	%#{$prefix + "content"} {
 		@content;
 	}
 	@each $icon in $icons {
 		.#{$prefix + $icon} {
-		$url: url($path + $filename-prefix + $icon + $filename-postfix + '.' + $type);
-			mask-image: $url;
+			$url: url($path + $filename-prefix + $icon + $filename-postfix + "." + $type);
 			-webkit-mask-image: $url;
-			@extend %#{$prefix + 'content'}, %#{$prefix + 'icon'};
+			mask-image: $url;
+			@extend %#{$prefix + "content"}, %#{$prefix + "icon"};
 		}
 	}
 }
